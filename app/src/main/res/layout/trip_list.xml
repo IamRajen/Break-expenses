@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/trip_card_view"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+
+        
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trip_id"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip Name: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17dp"
+                android:layout_margin="5dp"
+                android:id="@+id/trip_name"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Created: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17dp"
+                android:layout_margin="5dp"
+                android:id="@+id/created"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17dp"
+                android:layout_margin="5dp"
+                android:text="Created By: "
+                android:id="@+id/created_by"/>
+
+        </LinearLayout>
+        
+</android.support.v7.widget.CardView>

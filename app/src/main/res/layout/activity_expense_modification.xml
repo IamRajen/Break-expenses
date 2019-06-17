@@ -1,0 +1,76 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ExpenseModification"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expense_id"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For : "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:id="@+id/expense_name"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount : "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:id="@+id/expense_amount"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:text="Date : "
+            android:layout_marginRight="25dp"
+            android:id="@+id/expense_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:text="Time : "
+            android:layout_marginLeft="15dp"
+            android:id="@+id/expense_time"/>
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/expense_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+</LinearLayout>
+
+

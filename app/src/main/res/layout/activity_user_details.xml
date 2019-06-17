@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetails">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_margin="20dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:layout_marginTop="25dp"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_contact"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Create a Password"
+                android:layout_marginTop="25dp"
+                android:inputType="textPassword"
+                />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your E-Mail address"
+                android:layout_marginTop="25dp"
+                android:inputType="textEmailAddress"
+                />
+
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="Login"
+                android:id="@+id/btn_login"
+                android:textAllCaps="true"
+                android:drawableEnd="@drawable/ic_send_black_24dp"
+                android:textColor="#feffff"
+
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

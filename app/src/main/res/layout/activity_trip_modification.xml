@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".TripModification"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trip_id"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Trip Name: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_margin="5dp"
+            android:id="@+id/trip_name"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@drawable/button_style"
+            android:textSize="9dp"
+            android:text="Delete Trip"
+            android:layout_gravity="right"
+            android:textAllCaps="false"
+            android:textColor="#feffff"
+            android:onClick="delete_trip"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Created: "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:id="@+id/created"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:layout_margin="5dp"
+        android:text="Created By: "
+        android:id="@+id/created_by"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/members"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/members_list_details"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+    </ListView>
+
+
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="Add Expenses"
+        android:id="@+id/login"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/add_expenses"
+        android:drawablePadding="7dp"
+        android:textColor="#feffff"
+        android:onClick="addExpenses"
+
+        />
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/trip_details_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+
+</LinearLayout>

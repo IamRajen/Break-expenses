@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scroolview"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PlanATrip"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_details"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip Name: "
+            android:textSize="17dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/trip_name"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:hint="Trip name"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/members_details"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:hint="Number of Members"
+        android:gravity="center"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/members_names_input"/>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="Submit"
+        android:id="@+id/trip_name_submission"
+        android:textAllCaps="true"
+        android:textColor="#feffff"
+        android:onClick="submit_data"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/members_list_heading"
+        android:text="Trip Members"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/members_list"
+        ></ListView>
+
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="Create"
+        android:id="@+id/create_trip"
+        android:textAllCaps="true"
+        android:textColor="#feffff"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:onClick="create_trip"
+        />
+
+</LinearLayout>
+</ScrollView>

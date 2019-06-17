@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_gravity="center">
+
+
+    <android.support.v7.widget.CardView android:id="@+id/trip_card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="5dp"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#fff"
+                card_view:cardCornerRadius="10dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center|right"
+                card_view:cardElevation="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/close"
+                    android:src="@drawable/close"/>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/member_name"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total to be paid : "
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total_to_be_paid"
+                    android:textColor="#000"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due: "
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/due"
+                    android:textColor="#000"
+                    android:text=""/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wanna Pay : "
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wanna_paid"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:text="Paid"
+                    android:layout_margin="10dp"
+                    android:id="@+id/paid"
+                    android:textAllCaps="false"
+                    android:textColor="#feffff"
+
+                    />
+
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:text="Update"
+                    android:layout_margin="10dp"
+                    android:id="@+id/update"
+                    android:textAllCaps="false"
+                    android:textColor="#feffff"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>

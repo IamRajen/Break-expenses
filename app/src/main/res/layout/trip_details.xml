@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/trip_card_view"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+
+        
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_expense_id"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_expense_name"
+                    android:text="For:  "
+                    android:textSize="17dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_expense_amount"
+                    android:text="Expense Amount:  "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_margin="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/list_expense_date"
+                            android:text="Date:  "
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/list_expense_time"
+                            android:text="Time:  "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+        
+</android.support.v7.widget.CardView>
