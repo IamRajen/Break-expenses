@@ -65,10 +65,6 @@ public class TripFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView textView = view.findViewById(R.id.trip_id);
-                //Toast.makeText(getContext(), ""+textView.getText().toString(), Toast.LENGTH_SHORT).show();
-//
-//                DatabaseReference databaseReference2= databaseReference.child(textView.getText().toString().trim());
-//                databaseReference2.removeValue();
 
                 Intent intent = new Intent(getContext(),TripModification.class);
                 intent.putExtra("trip_id",textView.getText().toString());

@@ -98,7 +98,6 @@ public class PlanATrip extends AppCompatActivity {
 
     public void submit_data(View view) {
 
-        //Toast.makeText(this, ""+submit.getText().toString(), Toast.LENGTH_SHORT).show();
 
         if(member_details.getText().toString().trim().equals("") || trip_name.getText().toString().equals(""))
         {
@@ -108,8 +107,6 @@ public class PlanATrip extends AppCompatActivity {
         else if(submit.getText().toString().equals("Submit") )
         {
 
-            //progressBar.setVisibility(View.VISIBLE);
-            //Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show();
             number_of_members =Integer.parseInt( member_details.getText().toString().trim());
             member_details.setVisibility(View.GONE);
             submit.setVisibility(View.GONE);
@@ -118,10 +115,8 @@ public class PlanATrip extends AppCompatActivity {
             {
                 String name=phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
                 String phoneNumber = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-                //Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
                 contacts.add(name+"\n"+phoneNumber);
                 contact_list.add(name+"\n"+phoneNumber);
-                //contacts1.add(new Contact(name,phoneNumber));
 
             }
             //contact_adaptor = new ContactAdapter(this,contacts1);
@@ -169,7 +164,6 @@ public class PlanATrip extends AppCompatActivity {
             {
                 textView.setVisibility(View.VISIBLE);
                 String text = autoCompleteTextView.getText().toString();
-                //Toast.makeText(this,""+ text.substring(text.lastIndexOf('+')+3), Toast.LENGTH_SHORT).show();
                 String phone= "";
                 String name ="";
                 int cropping_point=text.length()-10;

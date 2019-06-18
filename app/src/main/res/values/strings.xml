@@ -9,4 +9,6 @@
     <string name="trip_details"><u>Trip Details</u></string>
     <string name="members"><u>Members</u></string>
     <string name="title_activity_home_page">HomePage</string>
+
+    <string name="add_friend"><u>Add Friend</u></string>
 </resources>
