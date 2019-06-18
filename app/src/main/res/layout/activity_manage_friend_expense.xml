@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageFriendExpense">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textColor="#346454"
+        android:textSize="25dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number: "
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/mobile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount: "
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid till Now"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/paid_till_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due: "
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/due"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="Add Expense"
+        android:layout_margin="20dp"
+        android:id="@+id/add_expenses"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#feffff"
+
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_expense_list"
+        android:layout_margin="5dp">
+
+    </ListView>
+
+
+
+
+
+
+
+
+</LinearLayout>

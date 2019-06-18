@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_gravity="center">
+
+
+    <android.support.v7.widget.CardView android:id="@+id/trip_card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="5dp"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/hidden_done_button2"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_friend"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Friend Name"
+                android:textSize="15dp"
+                android:id="@+id/friend_name"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="Add"
+                android:layout_margin="10dp"
+                android:id="@+id/add"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="#feffff"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>

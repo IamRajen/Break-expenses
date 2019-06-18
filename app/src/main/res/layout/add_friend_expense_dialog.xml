@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_gravity="center">
+
+
+    <android.support.v7.widget.CardView android:id="@+id/trip_card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="5dp"
+        android:layout_gravity="center"
+        card_view:cardUseCompatPadding="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/hidden_done_button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For : "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/expense_name"
+                android:textColor="#000"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/amount"
+                android:textColor="#000"
+                android:inputType="number"
+                />
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:id="@+id/paid"
+                android:textColor="#000"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="#fff"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Select a Date"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/expense_date"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="#fff"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expense_time"
+                    android:hint="Select Time"
+                    android:textSize="15dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="30dp"
+                    />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="** By default it takes current time **"
+            android:textColor="#b50154fa"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="Cancel"
+                android:layout_margin="10dp"
+                android:id="@+id/cancel"
+                android:textAllCaps="true"
+                android:textColor="#feffff"
+
+                />
+
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="Done"
+                android:layout_margin="10dp"
+                android:id="@+id/done"
+                android:textAllCaps="true"
+                android:textColor="#feffff"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>
