@@ -206,10 +206,11 @@ public class FriendFragment extends android.support.v4.app.Fragment {
                     Friend friend= dataSnapshot1.getValue(Friend.class);
                     friendArrayList.add(friend);
                 }
+                if(friendArrayList.size()>0) {
+                    FriendAdapter friendAdapter = new FriendAdapter(getActivity(), friendArrayList);
+                    listView.setAdapter(friendAdapter);
 
-                FriendAdapter friendAdapter = new FriendAdapter(getActivity(),friendArrayList);
-                listView.setAdapter(friendAdapter);
-
+                }
 
             }
 

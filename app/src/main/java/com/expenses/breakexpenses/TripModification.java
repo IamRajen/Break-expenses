@@ -156,7 +156,6 @@ public class TripModification extends AppCompatActivity {
                     Member member = dataSnapshot11.getValue(Member.class);
                     memberList.add(member);
 
-                    //Toast.makeText(TripModification.this, ""+member.getMember_name()+member.getMember_phone_number(), Toast.LENGTH_SHORT).show();
                 }
                 TripMemberAdapter tripMemberAdapter = new TripMemberAdapter(TripModification.this,memberList);
                 member_list_details.setAdapter(tripMemberAdapter);
@@ -421,14 +420,9 @@ public class TripModification extends AppCompatActivity {
                         memberList.remove(k);
                         memberList.add(k,member2);
                         databaseReference1.child(member2.getId()).setValue(member2);
-                        //Member parent_member = databaseReference1.child(member1.getMember_parent_id());
                     }
                     expense_memberList.clear();
                     onStart();
-
-
-
-
 
 
                 }

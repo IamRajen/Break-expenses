@@ -159,6 +159,17 @@ public class ManageFriendExpense extends AppCompatActivity {
                 else {
                     String total_paid= (Integer.parseInt(amount_paid_till_now.getText().toString())+Integer.parseInt(paying_now.getText().toString()))+"";
                     databaseReference2.child("paid").setValue(total_paid);
+
+
+
+                    String paid = friendList.get(0).getTotal_paid();
+                    total_paid =(Integer.parseInt(paying_now.getText().toString())+Integer.parseInt(paid))+"";
+                    databaseReference.child("total_paid").setValue(total_paid);
+                    friendList.clear();
+                    onStart();
+
+
+
                     dialog1.dismiss();
                 }
             }

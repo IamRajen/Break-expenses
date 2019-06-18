@@ -200,9 +200,7 @@ public class PlanATrip extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
         String date = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        //Toast.makeText(this, ""+date, Toast.LENGTH_SHORT).show();
         String id = databaseReference.push().getKey();
-        //Toast.makeText(this, ""+id, Toast.LENGTH_SHORT).show();
         Trips trips = new Trips(id,trip_name.getText().toString().trim(),sharedPreferences.getString("user_phone",""),sharedPreferences.getString("user_name",""), date,"");
         databaseReference.child(id).setValue(trips);
         DatabaseReference databaseReference1 = databaseReference.child(id).child("trip_member");
